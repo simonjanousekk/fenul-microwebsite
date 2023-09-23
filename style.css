@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "FenulVF";
+  src: url("FenulBETAVF.ttf") format("woff2-variations");
+}
+
+@font-face {
+  font-family: "SaansVF";
+  src: url("SaansVF.ttf") format("woff2-variations");
+}
+
+:root {
+  --bg: #111;
+  --text: #eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-variant-ligatures: common-ligatures;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  margin: auto;
+  width: 80%;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+hr {
+  margin: 4em 0 4em 0;
+  border: none;
+  border-top: 2px var(--text) solid;
+}
+
+/*
+wght 100-900
+wdth 0-100
+*/
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: FenulVF;
+}
+
+h1 {
+  font-size: 300px;
+  transition-timing-function: ease;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+p {
+  /* sans body */
+  font-family: SaansVF;
+  font-weight: 380;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.row > div {
+  width: calc(50% - 1em);
+}
+
+.glyph-sample {
+  font-family: FenulVF;
+  font-size: 5em;
+  line-height: 110%;
+  word-wrap: break-word;
+
+  transition-duration: 500ms;
+}
+
+button,
+select {
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+  color: var(--text);
+
+  border: 3px solid var(--text);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #484848;
+}
+
+button.small,
+select {
+  padding: 0.5em 1.2em;
+  border-radius: 0.8em;
+}
+
+select::after {
+  content: "nevim";
+  /* content: "▼";
+  font-size: 13px;
+  padding: 7px 20px 8px 15px;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  line-height: 17px; */
+}
