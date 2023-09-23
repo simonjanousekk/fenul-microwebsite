@@ -1,5 +1,5 @@
 var title = document.getElementById("title");
-var duration = 1000;
+var duration = 2000;
 // wght 100-900
 // wdth 0-100
 
@@ -18,7 +18,7 @@ const interval = setInterval(randomizeTitleStyle, duration);
 function randomizeTitleStyle() {
   var WGHT = Math.random() > 0.5 ? 100 : 900;
   var WDHT = Math.random() > 0.5 ? 0 : 100;
-  console.log(WGHT, WDHT);
+  // console.log(WGHT, WDHT);
 
   title.style.fontVariationSettings = '"wght" ' + WGHT + ', "wdth" ' + WDHT;
 }
@@ -31,18 +31,30 @@ const map01 = (num, outMin, outMax) => num * (outMax - outMin) + outMin;
 var glyphSample = document.getElementById("glyph-sample");
 
 var italic = false;
-document.getElementById("italic").addEventListener("click", toggleItalic);
-function toggleItalic() {
-  italic = !italic;
-  glyphSample.style.fontStyle = italic ? "italic" : "normal";
-}
+var glyphSampleWGHT = 400;
+var glyphSampleWDTH = 50;
+// document.getElementById("italic").addEventListener("click", toggleItalic);
+// function toggleItalic() {
+//   italic = !italic;
+//   glyphSample.style.fontStyle = italic ? "italic" : "normal";
+// }
 
-var selectorWGHT = document.getElementById("selector-WGHT");
-selectorWGHT.addEventListener("change", updateWGHT);
-function updateWGHT(e) {
-  glyphSample.style.fontVariationSettings = '"wght" ' + e.target.value;
+document.getElementById("selector-WGHT").addEventListener("change", (e) => {
+  glyphSampleWGHT = e.target.value;
+  updateGlyphSample();
+});
+
+document.getElementById("selector-WDHT").addEventListener("change", (e) => {
+  glyphSampleWDTH = e.target.value;
+  updateGlyphSample();
+});
+
+function updateGlyphSample() {
+  glyphSample.style.fontVariationSettings =
+    '"wght" ' + glyphSampleWGHT + ', "wdth" ' + glyphSampleWDTH;
 }
 
 // vyrad menit velikost
 // misto selectu slider
 // title menit velikost
+// COMPRESSED / STANDART / CONDENSET
