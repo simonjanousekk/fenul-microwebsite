@@ -25,6 +25,7 @@ body {
   color: var(--text);
   margin: auto;
   width: 80%;
+  max-width: 1920px;
 }
 
 img {
@@ -51,9 +52,12 @@ h4 {
 }
 
 h1 {
-  font-size: 300px;
+  font-size: 25vw;
   transition-timing-function: ease;
+  transition-property: font-variation-settings;
   text-align: center;
+
+  font-variation-settings: "wght" 900 "wdth" 100;
 }
 
 h2 {
@@ -79,35 +83,38 @@ p {
 
 .glyph-sample {
   font-family: FenulVF;
-  font-size: 5em;
+  font-size: 5.5vw;
   line-height: 110%;
   word-wrap: break-word;
 
   transition-duration: 500ms;
+  transition-property: font-variation-settings;
 }
 
-button,
-select {
-  background: none;
-  border: none;
-  outline: none;
-  appearance: none;
-  color: var(--text);
+.custom-select {
+  display: inline-block;
+  position: relative;
 
   border: 3px solid var(--text);
-  cursor: pointer;
+  border-radius: 0.7em;
+  margin: 0 1em 2em 0;
 }
 
-button:active {
-  background-color: #484848;
+.custom-select::before {
+  content: "^";
+  font-family: SaansVF;
+  transform: rotate(180deg);
+  pointer-events: none;
+  position: absolute;
+  right: 0.5em;
+  top: 0.3em;
 }
 
-button.small,
-select {
-  padding: 0.5em 1.2em;
-  border-radius: 0.8em;
-}
-
-select {
-  content: "nevim";
+.custom-select select {
+  padding: 0.4em 2em 0.5em 1em;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  color: var(--text);
 }

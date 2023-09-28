@@ -1,19 +1,10 @@
 var title = document.getElementById("title");
 var duration = 2000;
-// wght 100-900
-// wdth 0-100
 
-title.addEventListener("click", randomizeTitleStyle);
 title.style.transitionDuration = duration + "ms";
 
+randomizeTitleStyle();
 const interval = setInterval(randomizeTitleStyle, duration);
-
-// function randomizeTitleStyle() {
-//   var randomWGHT = Math.round(map01(Math.random(), 100, 900));
-//   var randomWDHT = Math.round(map01(Math.random(), 0, 100));
-//   title.style.fontVariationSettings =
-//     '"wght" ' + randomWGHT + ', "wdth" ' + randomWDHT;
-// }
 
 function randomizeTitleStyle() {
   var WGHT = Math.random() > 0.5 ? 100 : 900;
@@ -33,6 +24,7 @@ var glyphSample = document.getElementById("glyph-sample");
 var italic = false;
 var glyphSampleWGHT = 400;
 var glyphSampleWDTH = 50;
+updateGlyphSample();
 // document.getElementById("italic").addEventListener("click", toggleItalic);
 // function toggleItalic() {
 //   italic = !italic;
