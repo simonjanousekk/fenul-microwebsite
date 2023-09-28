@@ -11,6 +11,11 @@
 :root {
   --bg: #111;
   --text: #eee;
+  --gray: #484848;
+
+  --green: #00ff47;
+
+  --max-body-w: 1100px;
 }
 
 * {
@@ -24,8 +29,18 @@ body {
   background-color: var(--bg);
   color: var(--text);
   margin: auto;
-  width: 80%;
+  width: 85%;
   max-width: 1100px;
+}
+
+::-moz-selection {
+  color: var(--bg);
+  background: var(--green);
+}
+
+::selection {
+  color: var(--bg);
+  background: var(--green);
 }
 
 img {
@@ -34,15 +49,10 @@ img {
 }
 
 hr {
-  margin: 4em 0 4em 0;
+  margin: 4rem 0 4rem 0;
   border: none;
   border-top: 2px var(--text) solid;
 }
-
-/*
-wght 100-900
-wdth 0-100
-*/
 
 h1,
 h2,
@@ -60,19 +70,19 @@ h1 {
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 3rem;
+  margin-bottom: 1rem;
   font-variation-settings: "wght" 900, "wdth" 100;
 }
 
 p {
-  /* sans body */
   font-family: SaansVF;
   font-weight: 380;
+  margin-bottom: 1rem;
 }
 
 .row {
   display: flex;
-  /* flex-direction: row; */
   flex-wrap: wrap;
   gap: 2em;
 }
@@ -89,7 +99,7 @@ p {
 
 .glyph-sample {
   font-family: FenulVF;
-  font-size: 5.5vw;
+  font-size: min(5.5vw, 80px);
   line-height: 110%;
   word-wrap: break-word;
 
@@ -116,7 +126,7 @@ p {
   top: 0.3em;
 }
 
-.custom-select select {
+.custom-select > select {
   padding: 0.4em 2em 0.5em 1em;
   appearance: none;
   border: none;
@@ -135,4 +145,37 @@ p {
   right: 0;
   top: 20%;
   z-index: -1;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.buttons > a {
+  flex: calc(25% - 3rem);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.5rem 0;
+  color: var(--text);
+  font-family: SaansVF;
+  text-decoration: none;
+  border-radius: 15px;
+  border: 3px solid var(--text);
+}
+
+@media (max-width: 800px) {
+  .buttons > a {
+    flex: calc(50% - 1rem);
+  }
+}
+
+.buttons > a:hover,
+.custom-select:hover {
+  background-color: var(--gray);
 }
