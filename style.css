@@ -73,12 +73,19 @@ p {
 
 .row {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
   gap: 2em;
 }
 
 .row > div {
-  width: calc(50% - 1em);
+  flex: calc(50% - 1em);
+}
+
+@media (max-width: 800px) {
+  .row > div {
+    flex: 100%;
+  }
 }
 
 .glyph-sample {
@@ -117,4 +124,16 @@ p {
   outline: none;
   background: none;
   color: var(--text);
+}
+
+.title_parent {
+  position: relative;
+}
+
+.title_parent img {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  z-index: -1;
 }
