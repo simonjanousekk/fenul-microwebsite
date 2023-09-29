@@ -139,8 +139,10 @@ p {
   position: relative;
 }
 
-.title_parent img {
+.title_parent > svg,
+.title_parent > img {
   width: 50%;
+  fill: var(--green);
   position: absolute;
   right: 0;
   top: 20%;
