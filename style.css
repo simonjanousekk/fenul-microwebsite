@@ -141,7 +141,7 @@ p {
 
 .title_parent > svg,
 .title_parent > img {
-  width: 50%;
+  width: 40%;
   fill: var(--green);
   position: absolute;
   right: 0;
@@ -190,4 +190,10 @@ p {
 
 .vyrad > img {
   width: 100%;
+}
+
+.fenulis p {
+  font-family: FenulVF;
+  word-break: break-all;
+  font-size: 4rem;
 }
