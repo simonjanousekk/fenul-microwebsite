@@ -191,6 +191,15 @@ p {
 	color: var(--bg);
 }
 
+.buttons > .inactive {
+  text-decoration: line-through;
+}
+
+.buttons > .inactive:hover{
+  background-color: var(--bg);
+	color: var(--text);
+}
+
 .vyrad > img {
   width: 100%;
 }
