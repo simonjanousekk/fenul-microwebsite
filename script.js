@@ -58,5 +58,6 @@ function updateGlyphSample() {
 // body vetsi radkovani
 // Rr
 // 		hr vetsi spacing
+//    button buy mug cross
 
 // paralax
