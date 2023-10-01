@@ -1,6 +1,6 @@
 @font-face {
   font-family: "FenulVF";
-  src: url("FenulBETAVF.ttf") format("woff2-variations");
+  src: url("FenulVF.woff2") format("woff2-variations");
 }
 
 @font-face {
@@ -11,6 +11,7 @@
 :root {
   --bg: #111;
   --text: #eee;
+	--primary: #b8b399;
   --gray: #484848;
 
   --green: #00ff47;
@@ -41,7 +42,7 @@ body {
 
 ::selection {
   color: var(--bg);
-  background: var(--green);
+  background: var(--primary);
 }
 
 img {
@@ -50,7 +51,7 @@ img {
 }
 
 hr {
-  margin: 3rem 0;
+  margin: 5rem 0;
   border: none;
   border-top: 2px var(--text) solid;
 }
@@ -184,8 +185,10 @@ p {
 }
 
 .buttons > a:hover,
-.custom-select:hover {
-  background-color: var(--gray);
+.custom-select:hover,
+.custom-select:hover > select {
+  background-color: var(--primary);
+	color: var(--bg);
 }
 
 .vyrad > img {

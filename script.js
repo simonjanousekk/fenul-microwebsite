@@ -25,11 +25,6 @@ var italic = false;
 var glyphSampleWGHT = 400;
 var glyphSampleWDTH = 50;
 updateGlyphSample();
-// document.getElementById("italic").addEventListener("click", toggleItalic);
-// function toggleItalic() {
-//   italic = !italic;
-//   glyphSample.style.fontStyle = italic ? "italic" : "normal";
-// }
 
 document.getElementById("selector-WGHT").addEventListener("change", (e) => {
   glyphSampleWGHT = e.target.value;
@@ -50,3 +45,18 @@ function updateGlyphSample() {
 // misto selectu slider
 // title menit velikost
 // COMPRESSED / STANDART / CONDENSET
+
+
+// 		barva slect  b8b399
+// barva illustrace zkusit
+// 		about
+// favicon F
+// credits
+// velikost title
+// zmenit vyrad RR na illustraci a text
+// credits odendat pismenka z ilustrace
+// body vetsi radkovani
+// Rr
+// 		hr vetsi spacing
+
+// paralax
