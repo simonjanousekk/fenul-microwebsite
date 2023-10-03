@@ -12,11 +12,6 @@
   --bg: #b6b197;
   --text: #111;
   --primary: #00A2FF;
-  --brown: #00A2FF;
-  /* --bg: #111;
-  --text: #eee;
-  --primary: #00A2FF;
-  --brown: #b6b197; */
 }
 
 * {
@@ -24,25 +19,28 @@
   padding: 0;
   font-variant-ligatures: common-ligatures;
   font-size: 24px;
-  /* line-height: 27px; */
+}
+
+body,
+html {
+  overflow-x: hidden;
 }
 
 body {
   background-color: var(--bg);
   color: var(--text);
-  margin: auto;
-  width: 85%;
+  /* margin: auto;
+  width: 85%; */
+  padding: 0 5%;
   font-family: SaansVF;
   font-variation-settings: "wght" 470;
 }
 
 ::-moz-selection {
-  /* color: var(--bg); */
   background: var(--primary);
 }
 
 ::selection {
-  /* color: var(--bg); */
   background: var(--primary);
 }
 
@@ -184,16 +182,15 @@ p {
   padding: 1.5rem 0;
   color: var(--text);
   text-decoration: none;
-  border-radius: 15px;
+  border-radius: 0.7em;
   border: 3px solid var(--text);
 }
 
 .buttons>a:hover,
 .custom-select:hover,
 .custom-select:hover>select {
-  background-color: var(--brown);
-  /* color: var(--bg); */
-  border-radius: 15px;
+  background-color: var(--primary);
+  border-radius: 0.7em;
 }
 
 .buttons>.inactive {
