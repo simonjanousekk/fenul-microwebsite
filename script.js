@@ -41,32 +41,27 @@ function updateGlyphSample() {
     '"wght" ' + glyphSampleWGHT + ', "wdth" ' + glyphSampleWDTH;
 }
 
-// vyrad menit velikost
-// misto selectu slider
-// title menit velikost
-// COMPRESSED / STANDART / CONDENSET
-
+// favicon F
+// paralax
+// fixnout illustrace
 
 // 		barva slect  b8b399
-// barva illustrace zkusit
+//    barva illustrace zkusit
 // 		about
-// favicon F
-// credits
-// velikost title
-// zmenit vyrad RR na illustraci a text
-// credits odendat pismenka z ilustrace
-// body vetsi radkovani
-// Rr
+//    credits
+//    velikost title
+//    zmenit vyrad RR na illustraci a text
+//    credits odendat pismenka z ilustrace
+//    body vetsi radkovani
+//    Rr
 // 		hr vetsi spacing
 //    button buy mug cross
 
-// paralax
 
 
-// credits links
-// scaling na sirku
-// samolepka buy soon na buy fenul mug
-// ! barva selection solve
-// woff
-// illustrace
+//    credits links
+//    scaling na sirku
+//     samolepka buy soon na buy fenul mug
+//    ! barva selection solve
+// woff demo
 //
