@@ -205,13 +205,13 @@ p {
   color: var(--text);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .buttons>a {
     flex: calc(50% - 1rem);
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .buttons>a {
     flex: 100%;
   }
