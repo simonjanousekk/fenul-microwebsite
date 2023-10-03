@@ -59,7 +59,8 @@ hr {
 }
 
 hr,
-.title_parent {
+.title_parent,
+.row.last {
   margin: 6.5vw 0 7vw;
 }
 
