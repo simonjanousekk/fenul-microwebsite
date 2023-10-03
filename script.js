@@ -40,28 +40,3 @@ function updateGlyphSample() {
   glyphSample.style.fontVariationSettings =
     '"wght" ' + glyphSampleWGHT + ', "wdth" ' + glyphSampleWDTH;
 }
-
-// favicon F
-// paralax
-// fixnout illustrace
-
-// 		barva slect  b8b399
-//    barva illustrace zkusit
-// 		about
-//    credits
-//    velikost title
-//    zmenit vyrad RR na illustraci a text
-//    credits odendat pismenka z ilustrace
-//    body vetsi radkovani
-//    Rr
-// 		hr vetsi spacing
-//    button buy mug cross
-
-
-
-//    credits links
-//    scaling na sirku
-//     samolepka buy soon na buy fenul mug
-//    ! barva selection solve
-// woff demo
-//
