@@ -9,8 +9,6 @@
 }
 
 :root {
-  /* --bg: #eee;
-  --text: #111; */
   --bg: #111;
   --text: #eee;
   --primary: #00A2FF;
@@ -50,9 +48,13 @@ img {
 }
 
 hr {
-  margin: 5rem 0;
   border: none;
   border-top: 2px var(--text) solid;
+}
+
+hr,
+.title_parent {
+  margin: 8vw 0;
 }
 
 h2,
@@ -103,12 +105,17 @@ p {
 
 .glyph-sample {
   font-family: FenulVF;
-  font-size: min(8.5vw, 100px);
+  font-size: 6.5vw;
   line-height: 110%;
   word-wrap: break-word;
 
   transition-duration: 500ms;
   transition-property: font-variation-settings;
+}
+
+.custom-select>*,
+.custom-select {
+  font-size: .8rem;
 }
 
 .custom-select {
@@ -147,7 +154,7 @@ p {
 
 .title_parent>svg,
 .title_parent>img {
-  /* width: 100%; */
+  width: 200%;
   position: absolute;
   z-index: -1;
 }
@@ -174,18 +181,6 @@ p {
   border: 3px solid var(--text);
 }
 
-@media (max-width: 800px) {
-  .buttons>a {
-    flex: calc(50% - 1rem);
-  }
-}
-
-@media (max-width: 400px) {
-  .buttons>a {
-    flex: 100%;
-  }
-}
-
 .buttons>a:hover,
 .custom-select:hover,
 .custom-select:hover>select {
@@ -201,6 +196,18 @@ p {
 .buttons>.inactive:hover {
   background-color: var(--bg);
   color: var(--text);
+}
+
+@media (max-width: 1000px) {
+  .buttons>a {
+    flex: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 400px) {
+  .buttons>a {
+    flex: 100%;
+  }
 }
 
 .vyrad>img {
@@ -220,4 +227,17 @@ p>a:visited {
 
 .textparent>h2 {
   color: red !important;
+}
+
+.buttons>a>img {
+  position: absolute;
+  /* right: 3rem; */
+  /* top: 0rem; */
+  width: 5rem;
+  transition: 500ms ease;
+  rotate: -30deg;
+}
+
+.buttons>a>img:hover {
+  rotate: -390deg;
 }
