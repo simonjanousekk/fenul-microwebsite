@@ -67,7 +67,7 @@ h4 {
 h1 {
   font-size: min(25vw, 500px);
   font-family: FenulVF;
-
+  color: var(--primary);
   transition-timing-function: ease;
   transition-property: font-variation-settings;
   text-align: center;
@@ -140,14 +140,15 @@ p {
 
 .title_parent {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title_parent>svg,
 .title_parent>img {
-  width: 40%;
+  /* width: 100%; */
   position: absolute;
-  right: 0;
-  top: 20%;
   z-index: -1;
 }
 
@@ -217,6 +218,6 @@ p>a:visited {
   color: var(--text);
 }
 
-.textparent>p {
-  color: red;
+.textparent>h2 {
+  color: red !important;
 }
