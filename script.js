@@ -23,7 +23,7 @@ var glyphSample = document.getElementById("glyph-sample");
 
 var italic = false;
 var glyphSampleWGHT = 400;
-var glyphSampleWDTH = 50;
+var glyphSampleWDTH = 100;
 updateGlyphSample();
 
 document.getElementById("selector-WGHT").addEventListener("change", (e) => {
@@ -61,3 +61,12 @@ function updateGlyphSample() {
 //    button buy mug cross
 
 // paralax
+
+
+// credits links
+// scaling na sirku
+// samolepka buy soon na buy fenul mug
+// ! barva selection solve
+// woff
+// illustrace
+//
