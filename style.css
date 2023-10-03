@@ -9,10 +9,14 @@
 }
 
 :root {
-  --bg: #111;
+  --bg: #b6b197;
+  --text: #111;
+  --primary: #00A2FF;
+  --brown: #00A2FF;
+  /* --bg: #111;
   --text: #eee;
   --primary: #00A2FF;
-  --brown: #b6b197;
+  --brown: #b6b197; */
 }
 
 * {
@@ -71,7 +75,7 @@ h4 {
 h1 {
   font-size: min(25vw, 500px);
   font-family: FenulVF;
-  color: var(--primary);
+  color: var(--text);
   transition-timing-function: ease;
   transition-property: font-variation-settings;
   text-align: center;
@@ -187,7 +191,7 @@ p {
 .custom-select:hover,
 .custom-select:hover>select {
   background-color: var(--brown);
-  color: var(--bg);
+  /* color: var(--bg); */
   border-radius: 15px;
 }
 
